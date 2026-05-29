@@ -1,0 +1,36 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Document {
+  id            String   @id @default(uuid())
+  filename      String
+  originalName  String
+  size          Int
+  mimetype      String
+  uploadStatus  String   // "pending", "uploading", "complete", "failed"
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  storagePath   String
+}
+
+model Notification {
+  id        String   @id @default(uuid())
+  message   String
+  type      String   // "success", "error", "info"
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model UploadSession {
+  id             String   @id @default(uuid())
+  totalFiles     Int
+  completedFiles Int      @default(0)
+  status         String   // "pending", "processing", "complete", "failed"
+  createdAt      DateTime @default(now())
+}
