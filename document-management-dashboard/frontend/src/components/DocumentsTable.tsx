@@ -1,6 +1,6 @@
 import React from 'react';
 import { Download, FileText, Calendar, HardDrive } from 'lucide-react';
-import { useAppStore, Document } from '../store/useAppStore.js';
+import { useAppStore } from '../store/useAppStore.js';
 import { formatBytes } from './UploadCard.js';
 import { StatusBadge } from './StatusBadge.js';
 import { SkeletonRow } from './LoadingSpinner.js';

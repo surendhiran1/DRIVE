@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { UploadCloud, FileSpreadsheet, FileWarning } from 'lucide-react';
+import { UploadCloud } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { useAppStore } from '../store/useAppStore.js';
 

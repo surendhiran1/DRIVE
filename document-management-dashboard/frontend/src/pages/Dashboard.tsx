@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Files, HardDrive, BellRing, ArrowRight, Loader2, Play } from 'lucide-react';
+import { Files, HardDrive, BellRing, ArrowRight, Loader2 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore.js';
 import UploadZone from '../components/UploadZone.js';
 import UploadCard from '../components/UploadCard.js';

@@ -324,7 +324,7 @@ export const useAppStore = create<AppState>((set, get) => ({
 
     // Realtime bulk progress increments
     socket.on('upload_progress', (data: { sessionId: string; completedFiles: number; totalFiles: number }) => {
-      const { sessionId, completedFiles, totalFiles } = data;
+      const { sessionId, completedFiles } = data;
       set((state) => {
         if (state.activeSession?.id === sessionId) {
           return {

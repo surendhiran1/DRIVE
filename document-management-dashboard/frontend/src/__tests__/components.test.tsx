@@ -1,6 +1,5 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import ProgressBar from '../components/ProgressBar.js';
 import UploadCard from '../components/UploadCard.js';

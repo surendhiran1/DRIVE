@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { useAppStore, Notification } from '../store/useAppStore.js';
-import { Bell, Check, Trash2, Clock, CheckCircle2, AlertCircle, Info } from 'lucide-react';
+import { useAppStore } from '../store/useAppStore.js';
+import { Bell, Check, Clock, CheckCircle2, AlertCircle, Info } from 'lucide-react';
 import { formatTimeAgo } from '../components/NotificationDropdown.js';
 import { EmptyState } from '../components/EmptyState.js';
 
